@@ -1,3 +1,2 @@
 Proyecto Perfumeria Aladdin
-
-E-commerce de la perfumeria
+Creacion de E-commerce para la perfumeria
