@@ -692,7 +692,7 @@
 /*** Register Start ***/
 .register-form {
     max-width: 600px;
-    margin: 2rem auto;
+    margin-left: 2rem;
     padding: 2rem;
     background-color: #fff;
     border-radius: 10px;
@@ -728,4 +728,60 @@
     width: 350px;
     height: 300px;
     object-fit: cover;
+}
+
+/*** Checkout Start ***/
+
+.form-check-input:focus{border-color:#e284b9;
+    outline:0;
+    box-shadow:0 0 0 .25rem rgba(196, 8, 96, 0.25)
+}
+.form-check-input:checked{background-color:#e284b9;border-color:#e284b9}
+.form-check-input[type=checkbox]:indeterminate{
+    background-color:#e284b9;
+    border-color:#e284b9;
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")}
+
+.form-check-input:checked~.form-check-label{color:#e284b9}
+.form-check-input:checked~.form-check-label{color:#e284b9}
+.form-check-input:focus{border-color:#e284b9;
+    outline:0;box-shadow:0 0 0 .25rem rgba(196, 8, 96, 0.25)}
+.form-control:focus{
+    color:#747d88;
+    background-color:#fff;
+    border-color:#e284bf;
+    outline:0;
+    box-shadow:0 0 0 .25rem rgba(196, 8, 111, 0.25)}
+/*** Checkout End ***/
+
+.btn-modal-cart{
+    background-color: transparent;
+    border: none !important;
+}
+.btn-modal-cart:hover{
+    background-color: transparent;
+    border: none;
+}
+.top-modal-footer{
+    box-shadow:0 0 15px rgba(0, 0, 0, 0.1);
+}
+.text-modal-boton:hover{
+    color:#45595b !important;
+}
+.text-modal-boton:focus{
+    color:#45595b !important;
+}
+.text-modal-boton:active{
+    color:#45595b !important;
+}
+.bg-login{
+    background-image: url(../img/portada/bannerPerfume2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg-login::before{
+    content: "";
+    position: absolute;
+    top: 0;
 }

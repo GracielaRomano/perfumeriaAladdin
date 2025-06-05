@@ -44,13 +44,20 @@
     <!-- Navbar End -->
 
     <!-- Register Form Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 bg-login">
         <div class="container">
             <div class="register-form">
                 <div class="register-header">
+                    <a href="index.html" class="navbar-brand d-block mb-4">
+                        <img src="img/logo/logoAladdin.jpg" alt="Perfumeria Aladdin" class="img-fluid" style="max-width: 180px;">
+                    </a>
                     <h2>Crear Cuenta</h2>
                     <p>Complete el formulario para registrarse</p>
                 </div>
+                <!-- <div class="register-header">
+                    <h2>Crear Cuenta</h2>
+                    <p>Complete el formulario para registrarse</p>
+                </div> -->
                 <form id="registerForm" onsubmit="return validateForm(event)">
                     <div class="form-group">
                         <label for="nombre">Nombre completo*</label>
@@ -87,13 +94,7 @@
     </div>
     <!-- Register Form End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
-        <div class="container py-5">
-            <!-- Footer content here -->
-        </div>
-    </div>
-    <!-- Footer End -->
+    
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
