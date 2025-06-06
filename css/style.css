@@ -6,7 +6,7 @@
     --bs-gray-dark: #343a40;
 }
 .text-secondary{color:#28313a}
-.text-primary{color:#f49bb8}
+.text-primary{color:#fe6796}
 .text-dark{color:#45595b}
 .text-light{color:#f4f6f8}
 .text-warning{color:#ffb524} 
@@ -89,6 +89,20 @@
 .bg-warning{background-color:#ffb524}
 .bg-danger{background-color:#ff4d4d}
 .bg-white{background-color:#fff}
+
+.rounded-circle{
+    border-radius: 50% !important;
+}
+.rounded-circle:hover{
+    background-color:#fe6796 !important;
+    color:#fff !important;
+}
+.circle-search:hover{
+    background-color:#fe6796 !important;
+    color:#fff !important;
+}
+/*** Brand Start ***/
+
 
 /*** Shop Start ***/
 .img-shop{
@@ -784,4 +798,54 @@
     content: "";
     position: absolute;
     top: 0;
+}
+
+/* Logo Carousel Styles */
+.logo-carousel {
+    padding: 60px 0;
+    background:var(--bs-light);
+}
+
+.logo-carousel .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-slide-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    width: calc(200px * 14);
+}
+
+.logo-slide {
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-slide img {
+    max-width: 150px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.logo-slide img:hover {
+    filter: grayscale(0%);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 7));
+    }
 }
