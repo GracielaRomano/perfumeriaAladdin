@@ -106,8 +106,10 @@
 
 /*** Shop Start ***/
 .img-shop{
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 /*** Shop End ***/
 
@@ -127,15 +129,26 @@
 
  .back-to-top {
     position: fixed;
+    display: none;
     right: 30px;
     bottom: 30px;
+    z-index: 99;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
     display: flex;
-    width: 45px;
-    height: 45px;
     align-items: center;
     justify-content: center;
-    transition: 0.5s;
-    z-index: 99;
+    transition: all 0.3s ease;
+}
+
+.back-to-top i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.back-to-top:hover {
+    background-color: #128C7E !important;
 }
 /*** Spinner End ***/
 
@@ -481,10 +494,30 @@
 /*** Fruits End ***/
 
 /*** Products Start ***/
-.img-product{
-    width: 310px;
-    height: 310px;
+.img-product {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    
 }
+
+.fruite-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fruite-img {
+    width: 100%;
+}
+
+.card-product {
+    width: 100%;
+    height: auto;
+}
+
 .card-product:hover{
     background-color: #f8eef1;
 }
@@ -595,7 +628,8 @@
 
 /*** Banner Section Start ***/
 .banner .banner-btn:hover {
-    background: var(--bs-primary);
+    background: var(--bs-light);
+    color: var(--bs-primary);
 }
 /*** Banner Section End ***/
 
@@ -739,8 +773,9 @@
 }
 /*** Register End ***/
 .img-banner{
-    width: 350px;
-    height: 300px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
     object-fit: cover;
 }
 
@@ -832,8 +867,8 @@
 
 .logo-slide img {
     max-width: 150px;
-    height: auto;
-    filter: grayscale(100%);
+    height: 70px;
+    /*filter: grayscale(100%);*/
     transition: filter 0.3s ease;
 }
 
